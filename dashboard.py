@@ -162,7 +162,7 @@ with tab1:
         st.metric(
             "Total Karyawan Gen Z",
             f"{len(filtered_df):,}",
-            delta=f"{len(filtered_df)/len(df)*100:.1f}% dari total"
+            #delta=f"{len(filtered_df)/len(df)*100:.1f}% dari total"
         )
 
     with col2:
@@ -170,8 +170,8 @@ with tab1:
         st.metric(
             "Rata-rata Stress",
             f"{avg_stress:.2f}/10",
-            delta=f"{avg_stress - summary_stats['avg_stress']:.2f}",
-            delta_color="inverse"
+            #delta=f"{avg_stress - summary_stats['avg_stress']:.2f}",
+            #delta_color="inverse"
         )
 
     with col3:
@@ -179,8 +179,8 @@ with tab1:
         st.metric(
             "Rata-rata Burnout",
             f"{avg_burnout:.2f}/10",
-            delta=f"{avg_burnout - summary_stats['avg_burnout']:.2f}",
-            delta_color="inverse"
+            #delta=f"{avg_burnout - summary_stats['avg_burnout']:.2f}",
+            #delta_color="inverse"
         )
 
     with col4:
@@ -189,7 +189,7 @@ with tab1:
         st.metric(
             "Risiko Tinggi",
             f"{high_risk:,}",
-            delta=f"{high_risk_pct:.1f}%"
+            #delta=f"{high_risk_pct:.1f}%"
         )
 
     with col5:
@@ -197,7 +197,7 @@ with tab1:
         st.metric(
             "Kepuasan Kerja",
             f"{avg_satisfaction:.2f}/10",
-            delta=f"{avg_satisfaction - summary_stats['avg_satisfaction']:.2f}"
+            #delta=f"{avg_satisfaction - summary_stats['avg_satisfaction']:.2f}"
         )
 
     st.markdown("---")
