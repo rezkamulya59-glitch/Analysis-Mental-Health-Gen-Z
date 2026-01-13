@@ -56,7 +56,7 @@ def load_data():
         return df, summary
     except FileNotFoundError:
         # Generate sample data if files don't exist
-        st.warning("⚠️ Data files not found. Using sample data for demonstration.")
+       # st.warning("⚠️ Data files not found. Using sample data for demonstration.")
         np.random.seed(42)
         n = 1000
         df = pd.DataFrame({
